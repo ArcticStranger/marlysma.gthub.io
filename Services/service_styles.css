@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 400;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px 9%;
+    background: url(https://preview.redd.it/a7feesms1cu81.png?width=1920&format=png&auto=webp&s=fe804fb461b271a26a19de793383d09de496e45d);
+    background-size: cover;
+    color: #cec8c8;
+    text-align: center;
+}
+
+.button-return {
+    padding: 20px 20px;
+    background: #961515;
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 0%;
+}
+
+.service .heading {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.service .wrapper-two {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.wrapper-two .box {
+    padding: 15px 15px;
+    background: rgba(230, 11, 11, 0.3);
+    border-radius: 20px;
+}
+
+.wrapper-two .box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+}
+
+.box i {
+    font-size: 60px;
+    color: #ff0000;
+}
+
+.box h2 {
+    font-size: 25px;
+}
+
+.box p {
+    margin: 10px 0 15px;
+    font-size: 12px;
+}
+
+.box .btn {
+    display: inline-block;
+    padding: 8px 20px;
+    background: #11141d;
+    border: 2px solid #fffefe;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s ease-in;
+}
+
+.box .btn:hover {
+    background: transparent;
+    font-weight: 700;
+    color: #d9ff04;  
+}
+
+@media screen and (max-width: 992px) {
+    .service {
+        padding: 20px 5%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .service .wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
