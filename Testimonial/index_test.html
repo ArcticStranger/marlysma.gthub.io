@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" 
+    integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./wtftestimonial.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section class="testimonial__area">
+        <div class="wrappemonial">
+            <div class="testimonial swiper">
+                <div class="testimonial__card--group swiper-wrapper">
+                    <div class="testimonial__card swiper-slide">
+                        <img src="./assets_test/Saburo.jpg" alt="" class="customer__avatar">
+                        <div class="quote__icon">
+                            <img src="./assets_test/double-quotes.svg" width="30" alt="">
+                        </div>
+                        <p class="customer__quotes">Life, death... And between them... Glass. But we are working on it. Making the border thinner and thinner.</p>
+                        <div class="customer__info">
+                            <h4 class="customer__name">Saburo Arasaka</h4>
+                            <span class="customer__role">Founder of Arasaka Corp. "Ded-Dushnila"</span>
+                        </div>
+                    </div>
+                    <div class="testimonial__card swiper-slide">
+                        <img src="./assets_test/Hanako.jpg" alt="" class="customer__avatar">
+                        <div class="quote__icon">
+                            <img src="./assets_test/double-quotes.svg" width="30" alt="">
+                        </div>
+                        <p class="customer__quotes">My role is to be the heart of the family. It is time for the Arasaka family to listen to their hearts. They will show the way.</p>
+                        <div class="customer__info">
+                            <h4 class="customer__name">Hanako Arasaka</h4>
+                            <span class="customer__role">Head of "Kiji" Hatashi Shipping Company / Arasaka "Ultra-Home-Introvertka"</span>
+                        </div>
+                    </div>
+                    <div class="testimonial__card swiper-slide">
+                        <img src="./assets_test/Yorinobu.jpg" alt="" class="customer__avatar">
+                        <div class="quote__icon">
+                            <img src="./assets_test/double-quotes.svg" width="30" alt="">
+                        </div>
+                        <p class="customer__quotes">Fear, ever since I can remember. The one thing I can not deny him - he knew how to cause fear in people. He once told me everything of valve is only a flag blowing in wind. And wind is fear. And then ... he blew in my face. That was the one time he was wrong.</p>
+                        <div class="customer__info">
+                            <h4 class="customer__name">Yorinobu Arasaka</h4>
+                            <span class="customer__role">Impostor of Arasaka Family "NUH-UH, MOY OTEC TAKOY CRINGE"</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn__group">
+                    <div class="btn__prev">
+                        <svg width="58" height="58" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26 35L20.7071 29.7071C20.3166 29.3166 20.3166 28.6834 20.7071 28.2929L26 23M20.4141 29L38.4141 29" stroke="#3B3B3B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <rect x="57" y="57" width="56" height="56" rx="28" transform="rotate(-180 57 57)" stroke="#3B3B3B" stroke-width="2" />
+                          </svg>
+                    </div>
+                    <div class="btn__next">
+                        <svg width="58" height="58" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M31 22L36.2929 27.2929C36.6834 27.6834 36.6834 28.3166 36.2929 28.7071L31 34M36.5859 28H18.5859" stroke="#3B3B3B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <rect x="1" y="1" width="54" height="54" rx="27" stroke="#3B3B3B" stroke-width="2" />
+                          </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+     integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script>
+        const Tswiper = new Swiper('.testimonial',{
+            speed: 400,
+            loop: true,
+            spaceBetween: 100,
+            navigation:{
+                nextEl: ".btn__next",
+                prevEl: ".btn__prev",
+            }
+        });
+     </script>
+</body>
+</html>
