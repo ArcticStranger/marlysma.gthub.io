@@ -11,7 +11,7 @@ body {
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     margin: 6% 0;
-    background: url('../images/testimonialHD.jpg');
+    background: url('./assets_test/testimonialHD.jpg');
     background-size: contain;
 }
 .wrappemonial { 
