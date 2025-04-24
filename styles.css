@@ -44,9 +44,15 @@ body .container {
    display: flex;
    width: 180px;
    height: 130px;
-   margin-left: 14rem;
+   margin-left: 24rem;
    cursor: pointer;
    transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 1200px) {
+    .logo-gif {
+        margin-left: 14rem;
+    }
 }
 
 .logo-gif.new-image {
