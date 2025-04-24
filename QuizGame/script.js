@@ -1,17 +1,17 @@
 const QUESTIONS = [
     {
-        text: 'Did you feel anger? Hate?',
-        answers:['He was bleeding, begging for mercy', 'but you stabbed him, again and again', 'AGAIN AND AGAIN AND AGAIN!...', 'I know you killed him. Why dont you say it'],
+        text: 'Какое свойство CSS используется для центрирования блочного элемента по горизонтали на странице??',
+        answers:['margin: 0 auto;', 'text-align: center;', 'align-items: center;', 'justify-content: center;'],
         rightIndex: 0, 
     },
     {
         text: 'В каком году появился JavaScript?',
-        answers: ['1987', '1995', '2001', 'Arbuz'],
+        answers: ['1987', '1995', '2001', '2003'],
         rightIndex: 1,
     },
     {
         text: 'Какой компанией был создан JavaScript?',
-        answers: ['Sun', 'Microsoft', 'Netscape', 'ArbuzTechnologies'],
+        answers: ['Sun', 'Microsoft', 'Netscape', 'ORACLE'],
         rightIndex: 2,
     },
     {
@@ -22,16 +22,6 @@ const QUESTIONS = [
     {
         text: 'За сколько дней была сделана первая версия JavaScript?',
         answers: ['10', '100', '88', '731'],
-        rightIndex: 0,
-    },
-    {
-        text: 'Сколько месяцев автор квиза делает BrickGame1.0_C?',
-        answers: ['4', '24', '0.7', '731'],
-        rightIndex: 0,
-    },
-    {
-        text: 'Почему небо голубое?',
-        answers: ['Излучение синего цвета имеет более короткую длину волны и расположено в конце видимого спектра атмосферы', 'Arbuz Worldwide in da heaven', 'DID YOU FEEL ANGER? HATE?', '731'],
         rightIndex: 0,
     },
 ];
