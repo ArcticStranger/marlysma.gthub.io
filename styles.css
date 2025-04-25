@@ -49,6 +49,12 @@ body .container {
    transition: all 0.2s ease-in-out;
 }
 
+@media (min-width: 1200px) {
+    .logo-gif {
+        margin-left: 19rem;
+    }
+}
+
 .logo-gif.new-image {
     margin-top: 2%;
     width: 200px;
