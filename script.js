@@ -1,44 +1,21 @@
-const wrapper = document.querySelector('.wrapper');
-const loginLink = document.querySelector('.login-link');
-const registerLink = document.querySelector('.register-link');
-const btnPopup = document.querySelector('.btnLogin-popup');
-const iconClose = document.querySelector('.icon-close');
-const logoGif = document.querySelector('.logo-gif');
-const emailInputs = document.querySelectorAll('.input-box input[type="email"]');
-const passwordInputs = document.querySelectorAll('.input-box input[type="password"]');
-const newSrc = "./mainmenuassets/eye.gif";
-const originalSrc = "./mainmenuassets/arasaka.gif";
+document.addEventListener('DOMContentLoaded', function() {
+    const reportButton = document.querySelector('.report-button');
+    const deportButton = document.querySelector('.deport-button');
+    const hotNumber = document.querySelector('.hot-number');
+    const visionNumber = document.querySelector('.vision-number');
 
-registerLink.addEventListener('click', ()=> {
-    wrapper.classList.add('active');
-});
+    let hotCount = 47000;
+    let visionCount = 20.5;
 
-loginLink.addEventListener('click', ()=> {
-    wrapper.classList.remove('active');
-});
+    reportButton.addEventListener('click', function() {
+        hotCount += 1000;
+        hotNumber.textContent = `${(hotCount / 1000).toFixed(1)}k`;
+        visionNumber.textContent = `${visionCount.toFixed(1)}%`;
+    });
 
-btnPopup.addEventListener('click', ()=> {
-    wrapper.classList.add('active-popup');
-});
-
-iconClose.addEventListener('click', ()=> {
-    wrapper.classList.remove('active-popup');
-});
-
-logoGif.addEventListener('click', () => {
-    if (logoGif.src !== newSrc) {
-        logoGif.src = newSrc;
-        logoGif.classList.add('new-image'); 
-               // Меняем тип у ВСЕХ полей пароля
-        passwordInputs.forEach(input => {
-            input.type = "text";
-        });
-    } else {
-        logoGif.src = originalSrc;
-        logoGif.classList.remove('new-image'); 
-             // Возвращаем тип обратно
-        passwordInputs.forEach(input => {
-            input.type = "password";
-        });
-    }
+    deportButton.addEventListener('click', function() {
+        visionCount += 0.1;
+        hotNumber.textContent = `${(hotCount / 1000).toFixed(1)}k`;
+        visionNumber.textContent = `${visionCount.toFixed(1)}%`;
+    });
 });
