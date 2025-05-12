@@ -16,8 +16,8 @@ body {
 } */
 
 .container {
-    max-width: 1320px;
-    margin: 0 auto;
+    max-width: 100%;
+    /* margin: auto; */
     padding: 0 2rem;
     height: 100%;
 }
@@ -26,10 +26,11 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 4%;
-    padding: 12% 0;  
+    padding: 0% 5%;  
 } 
 
 .card {
+    margin-top: 40%;
     padding: 50px;
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(255, 255, 255, 0.2);
@@ -37,7 +38,7 @@ body {
     backdrop-filter: blur(10px);
     border-radius: 25px;
 }
-
+ 
 .card_title {
     font-weight: normal;
     font-size: 36px; 

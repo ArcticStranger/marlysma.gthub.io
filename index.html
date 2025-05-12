@@ -1,61 +1,284 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Profile Card</title>
+<html lang="en">
+<head>
+    <title>MARLYSMA BULLSHIT</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Login & Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="price_styles.css">
+    <link rel="stylesheet" href="media.css">
+    
+</head>
+<body>
+    <div class="hero-page">
+    <header>
+        <img class="logo-gif" src="./mainmenuassets/arasaka.gif" alt="Логотип">
+        <nav class="navigation">
+            <a href="./index.html">Home</a>
+            <a href="./Testimonial/index_test.html">About Arasaka</a>
+            <a href="./Services/index.html">Services</a>
+            <a href="./QuizGame/index.html">QUIZ</a>
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
 
-        <link rel="stylesheet" href="style.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    </head>
-    <body>
-    <div class="profile-card">
-        <div class="image">
-            <img src="profile.gif" alt="" class="profile-img">
-        </div>
-        <div class="text-data">
-            <span class="name">Marlys Macon</span>   
-            <span class="job">Status: Guard of Smoking Zone</span>
-        </div>
-
-        <div class="media-buttons">
-            <a href="#" style="background: gold" class="link">
-                <i class='bx bxl-linkedin-square' ></i>
-            </a>
-            <a href="#" style="background: gold" class="link">
-                <i class='bx bxl-discord-alt'></i>
-            </a>
-            <a href="#" style="background: gold" class="link">
-                <i class='bx bxl-facebook-square' ></i>
-            </a>
-            <a href="#" style="background: gold" class="link">
-                <i class='bx bxl-vk' ></i>
-            </a>
-            <a href="#" style="background: gold" class="link">
-                <i class='bx bxl-youtube' ></i>
-            </a>
-        </div>
-        <div class="buttons">
-            <button class="button report-button">Report</button>
-            <button class="button deport-button" style="background-color: red">Deport</button>
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="send-outline"></ion-icon></span>
+                        <input type="text" required>
+                        <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="keypad-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label> 
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox" required>Remember my place</label>
+                    <a href="#">Forgot Savedata_[ara.3301]<ion-icon name="help-outline"></ion-icon></a>
+                </div>
+                <button type="submit" class="btn">Sign In</button>
+                <div class="login-register">
+                    <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
         </div>
 
-        <div class="analytics">
-            <div class="data">
-                <i class='bx bxs-hot' ></i>
-                <span class="number hot-number">47k</span>
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="text-outline"></ion-icon></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="send-outline"></ion-icon></span>
+                        <input type="text" required>
+                        <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="keypad-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label> 
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox" required>I agree to serve the Arasaka family until my death!</label>
+                   
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <div class="login-register">
+                    <p>Already a servant?<a href="#" class="login-link">| Return to MIKOSHI</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="content">
+  <h1 class="saburo">«Сила — в преемственности», вот основной принцип семьи Арасака! <br>Под моим руководством корпорация «Арасака» вернётся к своим корням. А корни нашей компании могут сокрушить даже самую прочную скалу.
+        — Сабуро Арасака [яп. 荒坂 三郎]<br><br>
+        </h1>
+        <h2>"Запомните, а то забудете!" - Марлис Макконахи</h2>
+        <a href="#" class="btn">Нажми, чумба!</a>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <h2 class="card_title">Student_Basic</h2>
+                <p class="pricing">245.2$ <span class="small">/per month</span></p>
+                <p>Save -0%</p>
+                <hr>
+                <ul class="features">
+                    <li>Basic equipment</li>
+                    <li>Only data enhancing</li>
+                    <li>Zero other options</li>
+                </ul>
+                <a href="#" class="cta_btn">Buy Now</a>
             </div>
-            <div class="data">
-                <i class='bx bxs-beer' ></i>
-                <span class="number beer-number">2903.3*</span>
+
+            <div class="card">
+                <h2 class="card_title">Student_Pro</h2>
+                <p class="pricing">1701.5$ <span class="small">/per month</span></p>
+                <p>Save -20%</p>
+                <hr>
+                <ul class="features">
+                    <li>Expanded weaponary</li>
+                    <li>Status for data environment</li>
+                    <li>A+ classrooms</li>
+                </ul>
+                <a href="#" class="cta_btn">Buy Now</a>
             </div>
-            <div class="data">
-                <i class='bx bx-low-vision' ></i>
-                <span class="number vision-number">20.5%</span>
+
+            <div class="card">
+                <h2 class="card_title">Student_Ultra</h2>
+                <p class="pricing">6000$ <span class="small">/per month</span></p>
+                <p>Save your future!</p>
+                <hr>
+                <ul class="features">
+                    <li>More classified weaponary</li>
+                    <li>Unlimited dataleaks</li>
+                    <li>Customized room</li>
+                </ul>
+                <a href="#" class="cta_btn">Buy Now</a>
             </div>
         </div>
     </div>
+
+    <!-- Accordion -->
+     <div class="accordion">
+    <div class="list">
+        <div class="item">
+            <div class="question">
+                <div class="text">
+                    What is Arasaka?
+                </div>
+                <div class="dropdown">></div>
+            </div>
+            <div class="answer">
+                Arasaka is a Japanese megacorporation specializing in security, military equipment, and cybertechnology
+            </div>
+        </div>
+    </div>
+
+    <div class="list">
+        <div class="item">
+            <div class="question">
+                <div class="text">
+                    Who founded Arasaka?
+                </div>
+                <div class="dropdown">></div>
+            </div>
+            <div class="answer">
+                The corporation was founded by Saburo Arasaka, whose family continues to run it
+            </div>
+        </div>
+    </div>
+
+    <div class="list">
+        <div class="item">
+            <div class="question">
+                <div class="text">
+                    What services does Arasaka provide?
+                </div>
+                <div class="dropdown">></div>
+            </div>
+            <div class="answer">
+                Arasaka offers security services, cyberimplants, military gear, and the "Mikoshi" technology
+            </div>
+        </div>
+    </div>
+
+    <div class="list">
+        <div class="item">
+            <div class="question">
+                <div class="text">
+                    Why is Arasaka so influential?
+                </div>
+                <div class="dropdown">></div>
+            </div>
+            <div class="answer">
+                With its vast army, cutting-edge technology, and political influence, Arasaka dominates Night City and beyond.
+            </div>
+        </div>
+    </div>
+
+    <div class="list">
+        <div class="item">
+            <div class="question">
+                <div class="text">
+                    How is Arasaka connected to Night City?
+                </div>
+                <div class="dropdown">></div>
+            </div>
+            <div class="answer">
+                Arasaka plays a key role in Night City’s economy and politics, often interfering in conflicts and controlling vital resources.
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Contacts     -->
+     <div class="container_contacts">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.302841251916!2d24.87606167631826!3d44.856129273804186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b2bd007c3f458d%3A0x992ca6508664aa93!2sArasaka%20Tower!5e0!3m2!1sru!2sru!4v1745510327880!5m2!1sru!2sru"
+             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="detail">
+            <div class="title">Contact Us</div>
+            <div class="phone">
+                <i class='bx bx-phone-incoming'></i>
+                +1 (415) 777-2077
+            </div>
+            <div class="address">
+                <i class='bx bxs-map-pin' ></i>
+                Arasaka Tower, Corporate Plaza, Night City, NC 94043, USA
+                Arasaka Tower, Chuo-ku, Tokyo 104-0061, Japan
+            </div>
+            <div class="internet">
+                <i class='bx bx-world' ></i>
+                <a href="#" class="website-contacts">www.arasaka-corp.nc</a>
+            </div>
+            <div class="time">
+                <i class='bx bx-time-five' ></i>
+                In Night City (PDT, UTC-7), it’s currently 05:10 on April 24, 2025. In Tokyo (JST, UTC+9), it’s 01:10 on April 25, 2025.
+            </div>
+        </div>
+     </div>
+     <!-- footer -->
+      <section class="footer">
+        <div class="footer-content">
+            <img src="./images/Arasakalogo.jpg" alt="arasaka">
+            <p>"Strength in Continuity, Power Through Legacy"</p>
+            <div class="icons">
+                <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+                <a href="#"><i class='bx bxl-wikipedia' ></i></a>
+                <a href="#"><i class='bx bxl-redux' ></i></a>
+                <a href="#"><i class='bx bx-wallet-alt' ></i></a>
+            </div>
+        </div>
+        <div class="footer-content">
+            <h4>Projects</h4>
+            <li><a href="#">MIKOSHI</a></li>
+            <li><a href="#">Sandevistan</a></li>
+            <li><a href="#">BlackWall</a></li>
+            <li><a href="#">Soulgate</a></li>
+        </div>
+        <div class="footer-content">
+            <h4>Company</h4>
+            <li><a href="#">New York</a></li>
+            <li><a href="#">Tokyo</a></li>
+            <li><a href="#">Brussels</a></li>
+            <li><a href="#">Moscow</a></li>
+        </div>
+        <div class="footer-content">
+            <h4>Movement</h4>
+            <li><a href="#">Europe</a></li>
+            <li><a href="#">Asia</a></li>
+            <li><a href="#">America</a></li>
+            <li><a href="#">Other regions</a></li>
+        </div>
+        <div class="footer-content">
+            <h4>Help</h4>
+            <li><a href="#">Invite others</a></li>
+            <li><a href="#">Collect</a></li>
+            <li><a href="#">Become a donor</a></li>
+            <li><a href="#">Other issues</a></li>
+        </div>
+      </section>
+    <script src="app.js"></script>
     <script src="script.js"></script>
-    </body>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
